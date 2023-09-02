@@ -1,0 +1,19 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 0 auto;
+  width: 1140px;
+}
+
+@import 'mainSection';
+@import 'buttons';
+@import 'about';
+@import 'expSection';
+@import 'sectionLang';
+@import 'worksSection';
+@import 'praceSection';
+@import 'contactSection';
+@import 'media';

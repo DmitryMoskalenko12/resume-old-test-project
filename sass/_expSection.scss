@@ -1,0 +1,133 @@
+.practic{
+  min-height: 560px;
+  padding-bottom: 120px;
+  &__title{
+    width: 46px;
+    height: 24px;
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    left: 50%;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    z-index: 1;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background: #FFA501;
+      border-radius: 100%;
+      z-index: -1;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);  
+    }
+  }
+  &__title2{
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+  }
+  &__divider{
+    width: 60px;
+    height: 0px;
+    border: 2px solid #FFA501;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 25px;
+  }
+  &__wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,412px);
+    column-gap: 136px;
+    margin: 0 0 0 136px;
+    justify-content: center;
+    
+  }
+  &__block{
+    position: relative;
+    &::before{
+      content: '';
+      margin-left: -43px;
+      position: absolute;
+      height: 95%;
+      width: 1px;
+      background-color: #000000;
+    }
+  }
+  &__descr{
+    min-height: 129px;
+    margin-top: 45px;
+  }
+  &__educ{
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 45px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #FFA501;
+      border-radius: 100%;
+      left:-50px ;
+    }
+  }
+  &__item{
+    min-height: 39px;
+    display: flex;
+    margin-bottom: 12px;
+  }
+  &__wrap-img{
+    position: relative;
+    margin: auto 0;
+    margin-right: 20px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background: #FFA501;
+      z-index: -1;
+      border-radius: 100%;
+      top: -50%;
+      left: 0px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 42px;
+      height: 0px;
+      border: 1px solid #000000;
+      top: 27%;
+      left: -42px;
+    }  
+  }
+  &__img{
+    display: block;
+    margin-left: 15px;
+  }
+  &__inst{
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+  }
+  &__dipl{
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+  }
+  &__main-descr{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+ 
+}
